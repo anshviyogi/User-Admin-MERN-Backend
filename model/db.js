@@ -13,7 +13,7 @@
 
 
 mongoose
-.connect(process.env.MONGODB_URI, {
+.connect(process.env.MONGODB_URI || 'mongodb+srv://ansh:anshviyogi@cluster0.syyc1cg.mongodb.net/?retryWrites=true&w=majority' , {
   useNewUrlParser: true,
   useCreateIndex: true,
   useFindAndModify: false,
